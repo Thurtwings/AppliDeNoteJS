@@ -1,0 +1,64 @@
+.note {
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .note:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .note .handle {
+    cursor: move;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+  }
+  
+  .note .handle:hover {
+    background-color: #ddd;
+  }
+  
+  .note textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
+  }
+  
+  .note textarea:focus {
+    outline: none;
+  }
+  
+  .note .delete-note-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .note .delete-note-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  #notes-container {
+    position: relative;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
